@@ -17,17 +17,17 @@ function Calendar({
       showOutsideDays={showOutsideDays}
       className={cn("p-3", className)}
       classNames={{
-        months: "flex flex-col sm:flex-row space-y-4 sm:space-x-4 sm:space-y-0",
+        months: "space-y-4 sm:space-y-0",
         month: "space-y-4",
         caption: "flex justify-center pt-1 relative items-center",
-        caption_label: "text-sm font-medium",
-        nav: "space-x-1 flex items-center bg-gray-700",
+        caption_label: "flex justify-center relative items-center text-sm font-medium",
+        nav: "relative top-[18px] flex w-full justify-between z-10",
         nav_button: cn(
           buttonVariants({ variant: "outline" }),
-          "h-7 w-7 bg-transparent p-0 opacity-50 hover:opacity-100"
+          "h-7 w-7 bg-white p-0 opacity-50 hover:opacity-100 flex"
         ),
         nav_button_previous: "absolute left-1",
-        nav_button_next: "absolute right-1",
+        nav_button_next: "absolute right-1 bg-white",
         table: "w-full border-collapse space-y-1",
         head_row: "flex",
         head_cell:
@@ -58,7 +58,7 @@ function Calendar({
       }}
       components={{
         IconLeft: ({ ...props }) => <ChevronLeft className="h-4 w-4" />,
-        IconRight: ({ ...props }) => <ChevronRight className="h-4 w-4" />,
+        IconRight: ({ ...props }) => <ChevronRight className="h-4 w-4"/>,
       }}
       {...props} />)
   );

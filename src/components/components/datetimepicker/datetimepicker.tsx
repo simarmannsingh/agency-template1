@@ -78,7 +78,7 @@ export default function DayTimePicker( { setReservationTime, setReservationDate 
                         key={timeSlot}
                         variant={time === timeSlot ? "primary" : "outline"}
                         size="sm"
-                        className="w-full"
+                        className="w-full flex"
                         onClick={() => handleTimeSelect(timeSlot)}
                         disabled={!available}
                       >
