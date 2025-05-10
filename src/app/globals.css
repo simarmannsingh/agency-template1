@@ -86,3 +86,7 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+.rdp-button_previous, .rdp-button_next svg {
+  fill: white;
+}

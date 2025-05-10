@@ -8,7 +8,7 @@ module.exports = {
       return [
         {
           source: "/api/",
-          destination: `${process.env.NEXT_PUBLIC_API_SERVER_URL}`,
+          destination: `/${process.env.NEXT_PUBLIC_API_SERVER_URL}`,
         },
       ];
     },

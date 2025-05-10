@@ -94,7 +94,7 @@ export default function Home() {
                 <Button
                   variant={"outline"}
                   className={cn(
-                    "w-[280px] justify-start text-left font-normal",
+                    "w-[280px] justify-start text-left font-normal flex",
                     !reservationDate && "text-muted-foreground"
                   )}
                 >
@@ -119,7 +119,7 @@ export default function Home() {
 
         <CardContent>
           <div className='flex w-full items-center justify-center'>
-            <Button variant='primary' className='w-1/4 m-auto'>Set Appointment</Button>
+            <Button variant='primary' className='flex align-center'>Set Appointment</Button>
           </div>
         </CardContent>
 
